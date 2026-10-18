@@ -1,0 +1,61 @@
+// ============================
+// TIPOGRAFÍA (Google Fonts)
+// ============================
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+// Títulos y párrafos
+.titulo-principal {
+  font-size: 2.5rem;
+  font-weight: $peso-bold;
+  color: $color-verde;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  font-weight: $peso-semibold;
+  color: $color-verde;
+  margin: 0;
+
+  @include tablet {
+    font-size: 1.75rem;
+  }
+}
+
+.texto-parrafo {
+  font-size: 1rem;
+  font-weight: $peso-normal;
+  color: $color-texto;
+  margin: 0;
+}
+
+.pregunta-titulo {
+  font-size: 1.15rem;
+  font-weight: $peso-semibold;
+  color: $color-verde;
+  margin: 0;
+}
+
+// Links genéricos
+.enlace {
+  color: $color-naranja;
+  text-decoration: none;
+  font-weight: $peso-semibold;
+  transition: color $transicion;
+
+  &:hover {
+    color: $color-naranja-oscuro;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    @include contorno-focus($color-naranja);
+  }
+
+  &:active {
+    color: $color-naranja-profundo;
+  }
+}

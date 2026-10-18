@@ -1,0 +1,37 @@
+// ============================
+// VARIABLES
+// ============================
+
+// Paleta de colores
+$color-verde: #2E7D32;
+$color-naranja: #FF7043;
+$color-naranja-oscuro: #E64A19;
+$color-naranja-profundo: #BF360C;
+$color-durazno: #FFCC80;
+$color-crema: #FFF3E0;
+$color-texto: #333333;
+$color-blanco: #ffffff;
+$color-negro: #000000;
+
+// Tipografía
+$fuente-principal: 'Inter', sans-serif;
+$peso-normal: 400;
+$peso-semibold: 600;
+$peso-bold: 700;
+
+// Bordes
+$radio-chico: 6px;
+$radio-medio: 8px;
+$radio-grande: 12px;
+
+// Transiciones
+$transicion: 0.3s ease;
+$transicion-rapida: 0.2s ease;
+
+// Sombras
+$sombra-hover: 0 8px 20px rgba($color-negro, 0.2);
+$sombra-tarjeta: 0 8px 20px rgba($color-negro, 0.12);
+
+// Breakpoints
+$bp-tablet: 768px;
+$bp-desktop: 1024px;

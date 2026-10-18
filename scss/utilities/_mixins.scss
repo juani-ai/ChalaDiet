@@ -1,0 +1,36 @@
+// ============================
+// MIXINS
+// ============================
+@use "variables" as *;
+
+// Media queries (mobile first)
+@mixin tablet {
+  @media (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+// Columna flex con separación entre elementos
+@mixin flex-columna($separacion) {
+  display: flex;
+  flex-direction: column;
+  gap: $separacion;
+}
+
+// Contorno para el estado :focus
+@mixin contorno-focus($color, $grosor: 2px) {
+  outline: $grosor solid $color;
+  outline-offset: 2px;
+}
+
+// Efecto de "levantar" el elemento al pasar el mouse
+@mixin elevar($distancia, $sombra) {
+  transform: translateY($distancia);
+  box-shadow: $sombra;
+}

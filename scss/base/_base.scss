@@ -1,0 +1,19 @@
+// ============================
+// RESET GLOBAL Y BOX MODEL
+// ============================
+@use "../utilities/variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pagina {
+  font-family: $fuente-principal;
+  font-weight: $peso-normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: $color-texto;
+  background-color: $color-crema;
+}
