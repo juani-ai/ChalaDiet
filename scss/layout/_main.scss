@@ -5,10 +5,13 @@
 @use "../utilities/mixins" as *;
 
 .main-contenido {
-  max-width: 1000px;
+  width: 100%;
+  max-width: $ancho-maximo;
   margin: 0 auto;
+  flex-grow: 1;
   padding: $espacio-base * 1.5 $espacio-base;
   display: grid;
+  align-content: start;
   grid-template-columns: 1fr;
   grid-template-areas:
     "intro"

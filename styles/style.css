@@ -27,6 +27,9 @@
   line-height: 1.6;
   color: #333333;
   background-color: #FFF3E0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes aparecer {
@@ -40,13 +43,18 @@
   }
 }
 .titulo-principal {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   animation: aparecer 0.8s ease-out 0s both;
 }
 @media (prefers-reduced-motion: reduce) {
   .titulo-principal {
     animation: none;
+  }
+}
+@media (min-width: 768px) {
+  .titulo-principal {
+    font-size: 2.5rem;
   }
 }
 
@@ -118,6 +126,15 @@
 .navbar-chala {
   padding: 1rem 0;
 }
+.navbar-chala .container {
+  max-width: 1000px;
+  padding-inline: 1rem;
+}
+@media (min-width: 768px) {
+  .navbar-chala .container {
+    padding-inline: 2rem;
+  }
+}
 .navbar-chala .enlace-nav {
   color: #ffffff;
   padding: 0.5rem 0.75rem;
@@ -155,10 +172,13 @@
 }
 
 .main-contenido {
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  flex-grow: 1;
   padding: 1.5rem 1rem;
   display: grid;
+  align-content: start;
   grid-template-columns: 1fr;
   grid-template-areas: "intro" "galeria" "sobre" "beneficios" "destacado";
   gap: 2rem;
@@ -351,11 +371,23 @@
   background-color: rgba(46, 125, 50, 0.8);
   border-radius: 8px;
   padding: 0.5rem 1rem;
+  bottom: 2.5rem;
+  left: 5%;
+  right: 5%;
 }
 .caption-carrusel h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0;
+}
+@media (min-width: 768px) {
+  .caption-carrusel {
+    left: 15%;
+    right: 15%;
+  }
+  .caption-carrusel h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .lista-otros {

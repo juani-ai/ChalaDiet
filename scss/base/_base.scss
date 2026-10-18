@@ -16,6 +16,10 @@
   line-height: 1.6;
   color: $color-texto;
   background-color: $color-crema;
+  // El footer queda siempre abajo aunque la página tenga poco contenido
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 // ============================

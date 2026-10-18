@@ -15,18 +15,24 @@ Sitio web de **CHALA DIET**, una dietética online: *"Dietética Online al alcan
 ## Tecnologías
 
 - HTML5 semántico
-- SCSS (variables, mixins, partials y nesting) compilado a CSS
+- SCSS (variables, mixins con parámetros, @extend, operadores, partials y nesting) compilado a CSS
 - CSS3 (Flexbox, CSS Grid y media queries)
 - Bootstrap 5 por CDN (navbar, carousel y accordion)
+- AOS por CDN (animaciones al hacer scroll)
 - Google Fonts (Inter)
 
 ## Responsive
 
-El index, productos y preguntas frecuentes están adaptados a mobile, tablet y desktop:
+Las 5 páginas están adaptadas a mobile, tablet y desktop (mobile first):
 
 - **Mobile:** navbar con menú hamburguesa y todo en una columna.
 - **Tablet (desde 768px):** el catálogo pasa a 2 columnas.
-- **Desktop (desde 1024px):** el catálogo pasa a 3 columnas y el index se organiza en 2 columnas.
+- **Desktop (desde 1024px):** el catálogo pasa a 3 columnas, y el index, sobre mí y contacto se organizan en 2 columnas.
+
+## Animaciones
+
+- **Nativas (SCSS):** los títulos de cada página aparecen con un `@keyframes` (`aparecer`) aplicado con el mixin `animacion()`. Botones, links, tarjetas y carousel tienen `transition` en sus estados `:hover`, `:focus` y `:active`.
+- **Librería AOS:** las secciones aparecen con `fade-up` al hacer scroll. Se inicializa en `js/main.js`.
 
 ## Estructura
 
@@ -35,6 +41,8 @@ El index, productos y preguntas frecuentes están adaptados a mobile, tablet y d
 ├── README.md
 ├── package.json
 ├── assets/
+├── js/
+│   └── main.js
 ├── pages/
 │   ├── sobre-mi.html
 │   ├── productos.html
@@ -44,7 +52,8 @@ El index, productos y preguntas frecuentes están adaptados a mobile, tablet y d
 │   ├── main.scss
 │   ├── utilities/
 │   │   ├── _variables.scss
-│   │   └── _mixins.scss
+│   │   ├── _mixins.scss
+│   │   └── _placeholders.scss
 │   ├── base/
 │   │   ├── _base.scss
 │   │   └── _tipografia.scss

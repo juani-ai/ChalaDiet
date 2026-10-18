@@ -10,9 +10,13 @@
 // Títulos y párrafos
 .titulo-principal {
   @extend %titulo-verde;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: $peso-bold;
   @include animacion(aparecer);
+
+  @include tablet {
+    font-size: 2.5rem;
+  }
 }
 
 .subtitulo {

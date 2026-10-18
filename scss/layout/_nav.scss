@@ -5,7 +5,17 @@
 @use "../utilities/mixins" as *;
 
 .navbar-chala {
-  padding: 1rem 0;
+  padding: $espacio-base 0;
+
+  // Mismo ancho y márgenes que el contenido de la página
+  .container {
+    max-width: $ancho-maximo;
+    padding-inline: $espacio-base;
+
+    @include tablet {
+      padding-inline: $espacio-base * 2;
+    }
+  }
 
   .enlace-nav {
     color: $color-blanco;
