@@ -7,7 +7,7 @@ Sitio web de **CHALA DIET**, una dietética online: *"Dietética Online al alcan
 ## Páginas
 
 - **Inicio** (`index.html`): presentación, galería con carousel y producto destacado.
-- **Sobre mí** (`pages/sobre-mi.html`): quiénes somos y nuestros valores.
+- **Sobre nosotros** (`pages/sobre-nosotros.html`): quiénes somos y nuestros valores.
 - **Productos** (`pages/productos.html`): catálogo con grilla de productos.
 - **Preguntas frecuentes** (`pages/preguntas-frecuentes.html`): dudas comunes en un accordion.
 - **Contacto** (`pages/contacto.html`): medios de contacto y horarios.
@@ -44,7 +44,7 @@ Las 5 páginas están adaptadas a mobile, tablet y desktop (mobile first):
 ├── js/
 │   └── main.js
 ├── pages/
-│   ├── sobre-mi.html
+│   ├── sobre-nosotros.html
 │   ├── productos.html
 │   ├── preguntas-frecuentes.html
 │   └── contacto.html
