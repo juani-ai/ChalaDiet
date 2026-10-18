@@ -3,6 +3,10 @@
 // Único punto de entrada. Se compila a styles/style.css
 // ============================
 
+// Utilities
+@use "utilities/variables";
+@use "utilities/mixins";
+
 // Base
 @use "base/base";
 @use "base/tipografia";
