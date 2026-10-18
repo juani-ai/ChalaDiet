@@ -1,0 +1,13 @@
+{
+  "name": "chala-diet",
+  "version": "1.0.0",
+  "description": "Sitio web de CHALA DIET, dietética online",
+  "scripts": {
+    "sass": "sass scss/main.scss styles/style.css --no-source-map --watch",
+    "build": "sass scss/main.scss styles/style.css --no-source-map"
+  },
+  "author": "Juan Ignacio Bressan",
+  "devDependencies": {
+    "sass": "^1.105.2"
+  }
+}

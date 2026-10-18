@@ -15,6 +15,7 @@ Sitio web de **CHALA DIET**, una dietética online: *"Dietética Online al alcan
 ## Tecnologías
 
 - HTML5 semántico
+- SCSS (variables, mixins, partials y nesting) compilado a CSS
 - CSS3 (Flexbox, CSS Grid y media queries)
 - Bootstrap 5 por CDN (navbar, carousel y accordion)
 - Google Fonts (Inter)
@@ -32,14 +33,49 @@ El index, productos y preguntas frecuentes están adaptados a mobile, tablet y d
 ```
 ├── index.html
 ├── README.md
+├── package.json
 ├── assets/
 ├── pages/
 │   ├── sobre-mi.html
 │   ├── productos.html
 │   ├── preguntas-frecuentes.html
 │   └── contacto.html
+├── scss/
+│   ├── main.scss
+│   ├── utilities/
+│   │   ├── _variables.scss
+│   │   └── _mixins.scss
+│   ├── base/
+│   │   ├── _base.scss
+│   │   └── _tipografia.scss
+│   ├── layout/
+│   │   ├── _header.scss
+│   │   ├── _nav.scss
+│   │   ├── _main.scss
+│   │   └── _footer.scss
+│   └── components/
+│       ├── _buttons.scss
+│       ├── _cards.scss
+│       ├── _carousel.scss
+│       ├── _listas.scss
+│       └── _accordion.scss
 └── styles/
-    └── styles.css
+    └── style.css   (generado por Sass, no se edita a mano)
+```
+
+## Cómo compilar los estilos
+
+Los estilos se escriben en la carpeta `scss/` y `main.scss` es el único punto de entrada. Para generar `styles/style.css`:
+
+```
+npm install
+npm run build
+```
+
+Para que se compile solo cada vez que guardo un cambio:
+
+```
+npm run sass
 ```
 
 ## Autor
