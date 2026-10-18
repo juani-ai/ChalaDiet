@@ -1,0 +1,53 @@
+// ============================
+// NAVBAR (personalización de Bootstrap)
+// ============================
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.navbar-chala {
+  padding: 1rem 0;
+
+  .enlace-nav {
+    color: $color-blanco;
+    padding: 0.5rem 0.75rem;
+    border-radius: $radio-chico;
+    transition: background-color $transicion, color $transicion, transform $transicion-rapida;
+
+    &:hover {
+      color: $color-durazno;
+      background-color: rgba($color-blanco, 0.12);
+    }
+
+    &:focus {
+      color: $color-durazno;
+      @include contorno-focus($color-durazno);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &.active {
+      color: $color-durazno;
+      font-weight: $peso-semibold;
+    }
+  }
+
+  // Botón hamburguesa
+  .navbar-toggler {
+    border-color: $color-durazno;
+    transition: background-color $transicion;
+
+    &:hover {
+      background-color: rgba($color-blanco, 0.12);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($color-durazno, 0.6);
+    }
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+}

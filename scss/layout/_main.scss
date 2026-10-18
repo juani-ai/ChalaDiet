@@ -1,0 +1,68 @@
+// ============================
+// MAIN Y SECCIONES (Mobile First)
+// ============================
+@use "../utilities/mixins" as *;
+
+.main-contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "intro"
+    "galeria"
+    "sobre"
+    "beneficios"
+    "destacado";
+  gap: 2rem;
+
+  @include tablet {
+    padding: 2rem;
+    gap: 2.5rem;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "intro       intro"
+      "galeria     galeria"
+      "sobre       beneficios"
+      "destacado   destacado";
+  }
+}
+
+.seccion {
+  @include flex-columna(0.75rem);
+}
+
+.seccion-intro      { grid-area: intro; }
+.seccion-galeria    { grid-area: galeria; min-width: 0; }
+.seccion-sobre      { grid-area: sobre; }
+.seccion-beneficios { grid-area: beneficios; }
+.seccion-destacado  { grid-area: destacado; }
+
+.seccion-completa {
+  grid-column: 1 / -1;
+}
+
+// Grilla del catálogo (pages/productos.html)
+.grid-productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  .imagen-producto {
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

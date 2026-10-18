@@ -1,0 +1,11 @@
+// ============================
+// LISTA "OTROS PRODUCTOS"
+// ============================
+@use "../utilities/mixins" as *;
+
+.lista-otros {
+  list-style: none;
+  @include flex-columna(0.5rem);
+  margin: 0;
+  padding-left: 0.5rem;
+}

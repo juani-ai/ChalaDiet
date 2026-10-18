@@ -1,0 +1,30 @@
+// ============================
+// ACORDEÓN (Bootstrap - preguntas frecuentes)
+// ============================
+@use "../utilities/variables" as *;
+
+.acordeon-chala {
+  .accordion-button {
+    font-weight: $peso-semibold;
+    color: $color-verde;
+    transition: background-color $transicion, color $transicion;
+
+    &:not(.collapsed) {
+      background-color: $color-verde;
+      color: $color-blanco;
+    }
+
+    &:hover {
+      background-color: $color-durazno;
+      color: $color-texto;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($color-verde, 0.4);
+    }
+
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+}

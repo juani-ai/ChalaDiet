@@ -1,0 +1,21 @@
+// ============================
+// CHALA DIET - ARCHIVO PRINCIPAL
+// Único punto de entrada. Se compila a styles/style.css
+// ============================
+
+// Base
+@use "base/base";
+@use "base/tipografia";
+
+// Layout
+@use "layout/header";
+@use "layout/nav";
+@use "layout/main";
+@use "layout/footer";
+
+// Componentes
+@use "components/buttons";
+@use "components/cards";
+@use "components/carousel";
+@use "components/listas";
+@use "components/accordion";

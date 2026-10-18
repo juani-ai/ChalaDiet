@@ -1,0 +1,35 @@
+// ============================
+// HEADER
+// ============================
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.header-sitio {
+  background-color: $color-verde;
+}
+
+.titulo-header {
+  margin: 0;
+  line-height: 1;
+}
+
+// Logo / nombre de la marca
+.marca {
+  color: $color-blanco;
+  font-size: 1.3rem;
+  font-weight: $peso-bold;
+  transition: color $transicion;
+
+  &:hover,
+  &:focus {
+    color: $color-durazno;
+  }
+
+  &:active {
+    color: $color-naranja;
+  }
+
+  @include tablet {
+    font-size: 1.6rem;
+  }
+}

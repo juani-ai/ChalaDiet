@@ -1,0 +1,30 @@
+// ============================
+// BOTONES
+// ============================
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.boton-producto {
+  align-self: flex-start;
+  padding: 0.6rem 1.4rem;
+  background-color: $color-naranja;
+  color: $color-blanco;
+  font-weight: $peso-semibold;
+  text-decoration: none;
+  border-radius: $radio-medio;
+  transition: background-color $transicion, transform $transicion-rapida;
+
+  &:hover {
+    background-color: $color-naranja-oscuro;
+    color: $color-blanco;
+  }
+
+  &:focus {
+    color: $color-blanco;
+    @include contorno-focus($color-durazno, 3px);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

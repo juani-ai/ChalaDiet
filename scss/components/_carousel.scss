@@ -1,0 +1,45 @@
+// ============================
+// GALERÍA (Carousel de Bootstrap)
+// ============================
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.carrusel-chala {
+  border-radius: $radio-grande;
+  overflow: hidden;
+  transition: transform $transicion, box-shadow $transicion;
+
+  &:hover {
+    @include elevar(-4px, $sombra-hover);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    transition: opacity $transicion;
+  }
+}
+
+.imagen-carrusel {
+  height: 260px;
+  object-fit: cover;
+
+  @include tablet {
+    height: 340px;
+  }
+
+  @include desktop {
+    height: 420px;
+  }
+}
+
+.caption-carrusel {
+  background-color: rgba($color-verde, 0.8);
+  border-radius: $radio-medio;
+  padding: 0.5rem 1rem;
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: $peso-semibold;
+    margin: 0;
+  }
+}

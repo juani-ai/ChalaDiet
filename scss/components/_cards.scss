@@ -1,0 +1,33 @@
+// ============================
+// TARJETAS DE PRODUCTO
+// ============================
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.tarjeta-producto {
+  background-color: $color-blanco;
+  border-radius: $radio-medio;
+  padding: 1.5rem;
+  @include flex-columna(1rem);
+  transition: transform $transicion, box-shadow $transicion;
+
+  &:hover {
+    @include elevar(-5px, $sombra-tarjeta);
+  }
+}
+
+.figura-producto {
+  @include flex-columna(0.5rem);
+  margin: 0;
+}
+
+.imagen-producto {
+  width: 100%;
+  max-width: 350px;
+  border-radius: $radio-chico;
+}
+
+.caption-producto {
+  font-weight: $peso-semibold;
+  color: $color-verde;
+}

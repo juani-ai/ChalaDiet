@@ -1,0 +1,44 @@
+// ============================
+// FOOTER
+// ============================
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.footer-sitio {
+  background-color: $color-verde;
+  color: $color-blanco;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  @include flex-columna(1rem);
+  align-items: center;
+}
+
+.nav-lista-footer {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.enlace-footer {
+  color: $color-durazno;
+  text-decoration: none;
+  transition: color $transicion;
+
+  &:hover {
+    color: $color-blanco;
+  }
+
+  &:focus {
+    color: $color-blanco;
+    @include contorno-focus($color-durazno);
+  }
+
+  &:active {
+    color: $color-naranja;
+  }
+}
