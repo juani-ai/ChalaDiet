@@ -1,11 +1,12 @@
 // ============================
 // LISTA "OTROS PRODUCTOS"
 // ============================
+@use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
+@use "../utilities/placeholders";
 
 .lista-otros {
-  list-style: none;
-  @include flex-columna(0.5rem);
-  margin: 0;
-  padding-left: 0.5rem;
+  @extend %lista-limpia;
+  @include flex-columna($espacio-base * 0.5);
+  padding-left: $espacio-base * 0.5;
 }

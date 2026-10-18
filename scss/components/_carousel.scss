@@ -1,6 +1,7 @@
 // ============================
 // GALERÍA (Carousel de Bootstrap)
 // ============================
+@use "sass:math";
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
@@ -35,7 +36,7 @@
 .caption-carrusel {
   background-color: rgba($color-verde, 0.8);
   border-radius: $radio-medio;
-  padding: 0.5rem 1rem;
+  padding: math.div($espacio-base, 2) $espacio-base;
 
   h3 {
     font-size: 1.2rem;

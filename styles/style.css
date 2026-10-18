@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+.titulo-principal, .subtitulo, .pregunta-titulo {
+  color: #2E7D32;
+  margin: 0;
+}
+
+.enlace-footer, .enlace {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.lista-otros, .nav-lista-footer {
+  list-style: none;
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,18 +29,30 @@
   background-color: #FFF3E0;
 }
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .titulo-principal {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2E7D32;
-  margin: 0;
+  animation: aparecer 0.8s ease-out 0s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .titulo-principal {
+    animation: none;
+  }
 }
 
 .subtitulo {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2E7D32;
-  margin: 0;
 }
 @media (min-width: 768px) {
   .subtitulo {
@@ -43,15 +70,11 @@
 .pregunta-titulo {
   font-size: 1.15rem;
   font-weight: 600;
-  color: #2E7D32;
-  margin: 0;
 }
 
 .enlace {
   color: #FF7043;
-  text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
 }
 .enlace:hover {
   color: #E64A19;
@@ -218,19 +241,15 @@
 }
 
 .nav-lista-footer {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  margin: 0;
   padding: 0;
 }
 
 .enlace-footer {
   color: #FFCC80;
-  text-decoration: none;
-  transition: color 0.3s ease;
 }
 .enlace-footer:hover {
   color: #ffffff;
@@ -340,11 +359,9 @@
 }
 
 .lista-otros {
-  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin: 0;
   padding-left: 0.5rem;
 }
 

@@ -3,22 +3,22 @@
 // ============================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
+@use "../utilities/placeholders";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 // Títulos y párrafos
 .titulo-principal {
+  @extend %titulo-verde;
   font-size: 2.5rem;
   font-weight: $peso-bold;
-  color: $color-verde;
-  margin: 0;
+  @include animacion(aparecer);
 }
 
 .subtitulo {
+  @extend %titulo-verde;
   font-size: 1.5rem;
   font-weight: $peso-semibold;
-  color: $color-verde;
-  margin: 0;
 
   @include tablet {
     font-size: 1.75rem;
@@ -33,18 +33,16 @@
 }
 
 .pregunta-titulo {
+  @extend %titulo-verde;
   font-size: 1.15rem;
   font-weight: $peso-semibold;
-  color: $color-verde;
-  margin: 0;
 }
 
 // Links genéricos
 .enlace {
+  @extend %enlace-limpio;
   color: $color-naranja;
-  text-decoration: none;
   font-weight: $peso-semibold;
-  transition: color $transicion;
 
   &:hover {
     color: $color-naranja-oscuro;

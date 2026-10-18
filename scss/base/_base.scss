@@ -17,3 +17,20 @@
   color: $color-texto;
   background-color: $color-crema;
 }
+
+// ============================
+// ANIMACIONES (@keyframes)
+// ============================
+
+// Aparece desde abajo con un fundido
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY($recorrido-animacion);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

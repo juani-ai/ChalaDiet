@@ -29,6 +29,15 @@
   outline-offset: 2px;
 }
 
+// Animación con @keyframes (si el usuario pidió menos movimiento, no se anima)
+@mixin animacion($nombre, $duracion: $duracion-animacion, $retraso: 0s) {
+  animation: $nombre $duracion ease-out $retraso both;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
 // Efecto de "levantar" el elemento al pasar el mouse
 @mixin elevar($distancia, $sombra) {
   transform: translateY($distancia);

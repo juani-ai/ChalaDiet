@@ -1,12 +1,13 @@
 // ============================
 // MAIN Y SECCIONES (Mobile First)
 // ============================
+@use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
 .main-contenido {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1.5rem 1rem;
+  padding: $espacio-base * 1.5 $espacio-base;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -15,11 +16,11 @@
     "sobre"
     "beneficios"
     "destacado";
-  gap: 2rem;
+  gap: $espacio-base * 2;
 
   @include tablet {
-    padding: 2rem;
-    gap: 2.5rem;
+    padding: $espacio-base * 2;
+    gap: $espacio-base * 2.5;
   }
 
   @include desktop {
@@ -33,7 +34,7 @@
 }
 
 .seccion {
-  @include flex-columna(0.75rem);
+  @include flex-columna($espacio-base * 0.75);
 }
 
 .seccion-intro      { grid-area: intro; }
@@ -50,7 +51,7 @@
 .grid-productos {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: $espacio-base * 1.5;
 
   .imagen-producto {
     max-width: 100%;

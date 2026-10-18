@@ -19,6 +19,9 @@ $peso-normal: 400;
 $peso-semibold: 600;
 $peso-bold: 700;
 
+// Espaciados
+$espacio-base: 1rem;
+
 // Bordes
 $radio-chico: 6px;
 $radio-medio: 8px;
@@ -27,6 +30,10 @@ $radio-grande: 12px;
 // Transiciones
 $transicion: 0.3s ease;
 $transicion-rapida: 0.2s ease;
+
+// Animaciones
+$duracion-animacion: 0.8s;
+$recorrido-animacion: 20px;
 
 // Sombras
 $sombra-hover: 0 8px 20px rgba($color-negro, 0.2);

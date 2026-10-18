@@ -3,31 +3,30 @@
 // ============================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
+@use "../utilities/placeholders";
 
 .footer-sitio {
   background-color: $color-verde;
   color: $color-blanco;
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  @include flex-columna(1rem);
+  padding: $espacio-base * 1.5;
+  margin-top: $espacio-base * 2;
+  @include flex-columna($espacio-base);
   align-items: center;
 }
 
 .nav-lista-footer {
-  list-style: none;
+  @extend %lista-limpia;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  margin: 0;
+  gap: $espacio-base * 1.5;
   padding: 0;
 }
 
 .enlace-footer {
+  @extend %enlace-limpio;
   color: $color-durazno;
-  text-decoration: none;
-  transition: color $transicion;
 
   &:hover {
     color: $color-blanco;

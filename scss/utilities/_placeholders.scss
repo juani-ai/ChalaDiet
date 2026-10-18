@@ -1,0 +1,22 @@
+// ============================
+// PLACEHOLDERS (se usan con @extend)
+// ============================
+@use "variables" as *;
+
+// Títulos verdes sin margen
+%titulo-verde {
+  color: $color-verde;
+  margin: 0;
+}
+
+// Links sin subrayado con transición de color
+%enlace-limpio {
+  text-decoration: none;
+  transition: color $transicion;
+}
+
+// Listas sin viñetas ni margen
+%lista-limpia {
+  list-style: none;
+  margin: 0;
+}
