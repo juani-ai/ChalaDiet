@@ -45,19 +45,19 @@
 // Links genéricos
 .enlace {
   @extend %enlace-limpio;
-  color: $color-naranja;
+  color: $color-naranja-oscuro;
   font-weight: $peso-semibold;
 
   &:hover {
-    color: $color-naranja-oscuro;
+    color: $color-naranja-profundo;
     text-decoration: underline;
   }
 
   &:focus {
-    @include contorno-focus($color-naranja);
+    @include contorno-focus($color-naranja-oscuro);
   }
 
   &:active {
-    color: $color-naranja-profundo;
+    color: $color-naranja-quemado;
   }
 }

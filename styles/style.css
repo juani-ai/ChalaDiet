@@ -81,23 +81,23 @@
 }
 
 .enlace {
-  color: #FF7043;
+  color: #BF360C;
   font-weight: 600;
 }
 .enlace:hover {
-  color: #E64A19;
+  color: #A33010;
   text-decoration: underline;
 }
 .enlace:focus {
-  outline: 2px solid #FF7043;
+  outline: 2px solid #BF360C;
   outline-offset: 2px;
 }
 .enlace:active {
-  color: #BF360C;
+  color: #8A2808;
 }
 
 .header-sitio {
-  background-color: #2E7D32;
+  background-color: #1B5E20;
 }
 
 .marca {
@@ -244,7 +244,7 @@
 }
 
 .footer-sitio {
-  background-color: #2E7D32;
+  background-color: #1B5E20;
   color: #ffffff;
   text-align: center;
   padding: 1.5rem;
@@ -281,7 +281,7 @@
 .boton-producto {
   align-self: flex-start;
   padding: 0.6rem 1.4rem;
-  background-color: #FF7043;
+  background-color: #BF360C;
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
@@ -289,12 +289,12 @@
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .boton-producto:hover {
-  background-color: #E64A19;
+  background-color: #A33010;
   color: #ffffff;
 }
 .boton-producto:focus {
   color: #ffffff;
-  outline: 3px solid #FFCC80;
+  outline: 3px solid #A33010;
   outline-offset: 2px;
 }
 .boton-producto:active {
@@ -363,7 +363,7 @@
 }
 
 .caption-carrusel {
-  background-color: rgba(46, 125, 50, 0.8);
+  background-color: rgba(27, 94, 32, 0.9);
   border-radius: 8px;
   padding: 0.5rem 1rem;
   bottom: 2.5rem;

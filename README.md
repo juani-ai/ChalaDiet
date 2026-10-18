@@ -34,6 +34,14 @@ Las 5 páginas están adaptadas a mobile, tablet y desktop (mobile first):
 - **Nativas (SCSS):** los títulos de cada página aparecen con un `@keyframes` (`aparecer`) aplicado con el mixin `animacion()`. Botones, links, tarjetas y carousel tienen `transition` en sus estados `:hover`, `:focus` y `:active`.
 - **Librería AOS:** las secciones aparecen con `fade-up` al hacer scroll. Se inicializa en `js/main.js`.
 
+## SEO y accesibilidad
+
+- Cada página tiene su propio `<title>` y `meta description` con las palabras clave de su contenido.
+- Un solo `<h1>` por página y jerarquía de títulos ordenada (`h1` → `h2` → `h3`).
+- Imágenes con nombres descriptivos (por ejemplo `nuez-mariposa-extra-light.jpg`) y texto alternativo en el `alt`.
+- Colores de texto y fondo con contraste mínimo de 4.5:1 (WCAG AA).
+- Menús con `aria-label` para lectores de pantalla.
+
 ## Estructura
 
 ```

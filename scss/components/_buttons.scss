@@ -7,7 +7,7 @@
 .boton-producto {
   align-self: flex-start;
   padding: 0.6rem 1.4rem;
-  background-color: $color-naranja;
+  background-color: $color-naranja-oscuro;
   color: $color-blanco;
   font-weight: $peso-semibold;
   text-decoration: none;
@@ -15,13 +15,13 @@
   transition: background-color $transicion, transform $transicion-rapida;
 
   &:hover {
-    background-color: $color-naranja-oscuro;
+    background-color: $color-naranja-profundo;
     color: $color-blanco;
   }
 
   &:focus {
     color: $color-blanco;
-    @include contorno-focus($color-durazno, 3px);
+    @include contorno-focus($color-naranja-profundo, 3px);
   }
 
   &:active {

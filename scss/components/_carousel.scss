@@ -34,7 +34,7 @@
 }
 
 .caption-carrusel {
-  background-color: rgba($color-verde, 0.8);
+  background-color: rgba($color-verde-oscuro, 0.9);
   border-radius: $radio-medio;
   padding: math.div($espacio-base, 2) $espacio-base;
   // Más arriba para que no tape los indicadores del carousel
