@@ -2,7 +2,7 @@
 
 Sitio web de **CHALA DIET**, una dietética online: *"Dietética Online al alcance de tu mano"*.
 
-🔗 **Sitio desplegado:** https://juani-ai.github.io/ChalaDiet/
+🔗 **Sitio desplegado en Vercel:** https://chaladiet.vercel.app
 
 ## Páginas
 
